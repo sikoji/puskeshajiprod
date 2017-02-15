@@ -9,9 +9,12 @@
         <li>
             <img src="<?php echo base_url().'assets/news_img/'.(($bb->news_img_url <> "")?$bb->news_img_url:"thumb2.jpg");?>". class="pull-left" alt="" width="60" height="65">
             <h6><a href="<?=base_url('news/'.$bb->news_id."/".$link_title);?>"><?=$bb->news_title;?></a></h6>
+            <?php /*
             <p>
                <?=substr(htmlentities(strip_tags($bb->news_desc)),0,30);?>
             </p>
+
+            */ ?>
             <div class="clearfix"></div>
         </li>
         

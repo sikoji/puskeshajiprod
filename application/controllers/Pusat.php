@@ -15,7 +15,7 @@ class  Pusat extends CI_Controller {
 
 	function somedata(){
 		$data['konf']               = $this->haj->select_row("web_conf",array("ID_CONF"=>1));
-		$data['berita_baru']        = $this->haj->select_with_limit("web_news","updated_at DESC",array("visible" => 1,"news_status" => 1),2);
+		$data['berita_baru']        = $this->haj->select_with_limit("web_news","updated_at DESC",array("visible" => 1,"news_status" => 1),3);
 		$data['link']               = $this->haj->select_order("web_tautan","position ASC, tautan_title ASC",array("visible" => 1,"tautan_selected" => 1));
 		return $data;
 	}

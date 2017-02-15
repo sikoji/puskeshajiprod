@@ -8,7 +8,7 @@
                 </div>
             </div>
 
-            <div class="row mt75">
+            <div class="row mt5">
                 <div class="col-md-9">
                     <div class="beranda-slide">
                         <div id="beranda-slide" class="carousel slide" data-ride="carousel">
@@ -24,7 +24,7 @@
                             <?php $xx=0;foreach($infog as $inf){ ?>
                                 <div class="item <?=($xx == 0)?'active':'';?>">
                                     <a href="<?=base_url('pusat/detail/'.$inf->news_id);?>">
-                                        <img src="<?php echo base_url('assets/infographic_img/'.$inf->infographic_img_url);?>" alt="" style="width:99%;height:350px"/>
+                                        <img src="<?php echo base_url('assets/infographic_img/'.$inf->infographic_img_url);?>" alt="" style="width:99%;height:450px"/>
                                         <div class="carousel-caption">
                                            <?=$inf->infographic_title;?>
                                         </div>

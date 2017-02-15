@@ -686,8 +686,8 @@ public function document_save() {
 		
 		//upload doc
 		$config2['upload_path'] = './assets/doc_img/';
-        $config2['allowed_types'] = 'pdf|xls|xlsx|jpg|png|zip|rar';
-        $config2['max_size'] = '10000';
+        $config2['allowed_types'] = 'pptx|docx|pdf|xls|xlsx|jpg|png|zip|rar';
+        $config2['max_size'] = '110000';
         $config2['encrypt_name'] = true;
 
         $this->load->library('upload', $config2);
